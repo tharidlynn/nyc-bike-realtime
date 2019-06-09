@@ -107,19 +107,26 @@ station_id: "3791", turnover: 9.38 %
 
 Describe current offsets and end offsets
 
-`bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group turn-over --describe`
+```
+$ bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group turn-over --describe
+```
 
 Reset current offsets to the earliest offset
 
-`bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group turn-over --topic test --reset-offsets --to-earliest --execute`
+```
+$ bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group turn-over --topic test --reset-offsets --to-earliest --execute
+```
 
 Append delete.topic.enable=true to config/server.properties before executing delete command:
 
-`bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic test`
+```
+$ bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic info
+```
 
 Terminate Zookeeper and Kafka:
 
-`ps -ef | grep kafka | grep -v grep | awk '{print $2}'| xargs kill -9`
+```
+$ ps -ef | grep kafka | grep -v grep | awk '{print $2}'| xargs kill -9
 
-`ps -ef | grep zookeeper | grep -v grep | awk '{print $2}'| xargs kill -9`
-
+$ ps -ef | grep zookeeper | grep -v grep | awk '{print $2}'| xargs kill -9
+```
