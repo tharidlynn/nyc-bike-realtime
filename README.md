@@ -29,8 +29,9 @@ $ bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-f
 ```
 
 3.Verify all topics were created
-
-`bin/kafka-topics.sh --list --bootstrap-server localhost:9092`
+```
+$ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+```
 
 4.Build fat Jar File with `sbt assembly`
 
