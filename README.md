@@ -1,5 +1,5 @@
 # NYC-BIKE Real Time
-This project was an attempt to rewrite [Tracking NYC Citi Bike real time utilization using Kafka Streams](https://towardsdatascience.com/tracking-nyc-citi-bike-real-time-utilization-using-kafka-streams-1c0ea9e24e79) in Scala used for educational purposes only.
+This project is heavily inspired by [Tracking NYC Citi Bike real time utilization using Kafka Streams](https://towardsdatascience.com/tracking-nyc-citi-bike-real-time-utilization-using-kafka-streams-1c0ea9e24e79).
 
 The original post has only 2 metrics: "Low availability" and "Turn over ratio". So I decide to add another metric called "Closed station" that filters the closed station and display to the consumers.
 
@@ -33,7 +33,7 @@ $ bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-f
 $ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
 
-4.Build fat Jar File with `sbt assembly`
+4.Build a fat Jar with `sbt assembly`
 
 [Optional] `sbt run`  is sufficient in the local development.
 
