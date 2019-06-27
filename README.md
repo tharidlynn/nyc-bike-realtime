@@ -35,8 +35,6 @@ $ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 4.Build a fat Jar with `sbt assembly`
 
-[Optional] `sbt run`  is sufficient in the local development.
-
 5.Start Both Producers
 
 ```
