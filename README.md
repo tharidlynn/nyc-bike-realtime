@@ -1,7 +1,7 @@
 # NYC-BIKE Real Time
 This project is heavily inspired by [Tracking NYC Citi Bike real time utilization using Kafka Streams](https://towardsdatascience.com/tracking-nyc-citi-bike-real-time-utilization-using-kafka-streams-1c0ea9e24e79).
 
-The original post has only 2 metrics: "Low availability" and "Turn over ratio". So I decide to add another metric called "Closed station" that filters the closed station and display to the consumers.
+The original post has only 2 metrics: "Low availability" and "Turn over ratio". So I decide to add another metric called "Closed station" that filters the closed station and displays to the consumers.
 
 _Note: the project was bootstraped with `sbt new scala/scala-seed.g8`_
 
